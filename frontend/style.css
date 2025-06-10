@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: "Nanum Myeongjo", serif;
+  background: linear-gradient(to bottom, #fdf6e3, #f5e2c8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 360px;
+  max-height: 600px;
+  border: 1px solid #d8b17f;
+  background-color: #fffaf0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background-color: #d8b17f;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 75%;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #ffe4b5;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #f0e0c0;
+}
+
+.chat-form {
+  display: flex;
+  border-top: 1px solid #d8b17f;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  background: #fff;
+}
+
+#chat-input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #d8b17f;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
