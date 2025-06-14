@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>사주 채팅</title>
+    <!-- 마크다운 변환 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>사주 챗봇</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="chat-container">
       <header class="chat-header">🔮 사주 봐주는 챗봇</header>
       <div class="chat-box" id="chat-box">
-        <!-- 메시지들이 이 안에 표시됨 -->
+        <div class="message bot-message">
+          안녕하세요!<br />
+          양력, 성별, 생년월일, 태어난 시각을 입력해주시면 사주를 봐드릴게요.
+          <br />(예: 1999-01-01 12:00 양력 여성)
+        </div>
+        <!-- 채팅 메시지들 -->
       </div>
       <form id="chat-form" class="chat-form">
         <input
           type="text"
           id="chat-input"
-          placeholder="생년월일을 입력해보세요"
+          placeholder="무엇이든 물어보세요."
           autocomplete="off"
         />
         <button type="submit">전송</button>
